@@ -25,6 +25,7 @@ package = true
 dev = [
     "pre-commit>=4.5.1",
     "pytest>=9.0.3",
+    "python-semantic-release>=10.5.3",
 ]
 
 [tool.pytest.ini_options]
