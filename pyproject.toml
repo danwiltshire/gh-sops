@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "sops"
+name = "gh-sops"
 version = "0.1.0"
 description = "CLI-driven SOP generator powered by GitHub Copilot SDK"
 readme = "README.md"
@@ -17,6 +17,10 @@ dependencies = [
 
 [project.scripts]
 sops = "sops.main:cli"
+gh-sops = "sops.main:cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["sops"]
 
 [tool.uv]
 package = true
